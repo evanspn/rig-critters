@@ -1,0 +1,9 @@
+/target
+# screenshots of real rigs would carry real seat names: only the generated demo pictures in docs/ are tracked
+/*.png
+/*.gif
+/*.jpg
+/*.jpeg
+.env
+.env.*
+.DS_Store

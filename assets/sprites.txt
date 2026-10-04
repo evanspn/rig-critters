@@ -1,0 +1,225 @@
+# Hand-made 16x16 pixel-art critters for rig-critters. Original art (no copied sprites).
+# Format (line based, easy to parse from JS too):
+#   sprite NAME            starts a sprite
+#   pal KEY #rrggbb        palette entry (KEY is one character; '.' is always transparent)
+#   16 rows of 16 characters
+#   end
+# Keys every sprite uses: k outline, b body, d dark body, h light/belly, w eye white, e pupil, l lid (closed eye).
+# The eyes are the w and e pixels: when a critter sleeps they are redrawn in the lid color l.
+
+sprite owl
+pal k #2b1d14
+pal b #a06f45
+pal d #70472a
+pal h #ecd9a8
+pal a #f2a33a
+pal w #f6f1e0
+pal e #1b1424
+pal l #70472a
+.kk..........kk.
+.kdk........kdk.
+.kdbkkkkkkkkbdk.
+.kbbbbbbbbbbbbk.
+.kbwwwbbbbwwwbk.
+.kbwewbaabwewbk.
+.kbwwwbaabwwwbk.
+..kbbbbbbbbbbk..
+.kdbhhbbbbhhbdk.
+.kdbhhhhhhhhbdk.
+.kdbhdhhhhdhbdk.
+.kdbhhdhhdhhbdk.
+..kdbhhhhhhbdk..
+...kdbbbbbbdk...
+....kkaakkaak...
+................
+end
+
+sprite beaver
+pal k #2a1a12
+pal b #8a5a36
+pal d #5e3a22
+pal h #c89a6a
+pal a #f4eede
+pal w #f6f1e0
+pal e #1b1424
+pal l #5e3a22
+pal t #3d2a22
+................
+....kk....kk....
+...kddk..kddk...
+..kdbbkkkkbbdk..
+..kbbbbbbbbbbk..
+..kbbwebbwebbk..
+..kbbbbbbbbbbk..
+..kbbbhhhhbbbk..
+..kbbhhttahhbk..
+...kbhhaaaahbk..
+...kbbhaaaabbk..
+..kdbbbbbbbbdk..
+.kdbbhhhhhhbbdk.
+.kdbbhhhhhhbbdk.
+..kdbbbbbbbbdk..
+..kkttttttttkk..
+end
+
+sprite cat
+pal k #251a2a
+pal b #8f93a6
+pal d #5d6178
+pal h #d9dbe6
+pal a #f2a0b4
+pal w #b8f08a
+pal e #1b1424
+pal l #5d6178
+................
+.kk..........kk.
+.kdk........kdk.
+.kdak......kadk.
+.kdbkkkkkkkkbdk.
+.kbbbbbbbbbbbbk.
+.kbwwbbbbbbwwbk.
+.kbwebbbbbbwebk.
+.kbbbbbaabbbbbk.
+..kbbhhhhhhbbk..
+..kbhhhhhhhhbk..
+..kbhhhhhhhhbk..
+...kbbhhhhbbk...
+..kdbbbbbbbbdk..
+..kddkkkkkkddk..
+.......kkkd.....
+end
+
+sprite dog
+pal k #2a1c18
+pal b #c68a52
+pal d #8a5428
+pal h #f0dcb8
+pal a #2a1c18
+pal w #f6f1e0
+pal e #1b1424
+pal l #8a5428
+................
+..kkk......kkk..
+.kdddk....kdddk.
+.kddddkkkkddddk.
+.kdddbbbbbbdddk.
+.kddbbbbbbbbddk.
+..kbbwebbwebbk..
+..kbbbbbbbbbbk..
+..kbbbhhhhbbbk..
+..kbbhhaahhbbk..
+...kbhhhhhhbk...
+...kbbhhhhbbk...
+..kdbbbbbbbbdk..
+.kdbbhhhhhhbbdk.
+.kdbbhhhhhhbbdk.
+..kkkk....kkkk..
+end
+
+sprite hawk
+pal k #231a26
+pal b #7a5a44
+pal d #4c3628
+pal h #e8d8c0
+pal a #f2c230
+pal w #f6f1e0
+pal e #1b1424
+pal l #4c3628
+................
+.....kkkkkk.....
+....kddddddk....
+...kdbbbbbbdk...
+...kbbbbbbbbk...
+..kdbwebbwebdk..
+..kdbbbaabbbdk..
+..kdbbbaaaabdk..
+...kbbbbaabbk...
+..kdbhhhhhhbdk..
+.kddbhhdhhdhbddk
+.kddbhhhhhhhbddk
+..kdbbhhhhbbdk..
+...kdbbbbbbdk...
+....kk.aa.aak...
+................
+end
+
+sprite heron
+pal k #1d2230
+pal b #8aa0c4
+pal d #566c94
+pal h #e4edf8
+pal a #f2b43a
+pal w #f6f1e0
+pal e #1b1424
+pal l #566c94
+................
+...kk...........
+..kddkkk........
+.kddbbbbk.......
+.kdbwebaaaaaa...
+..kdbbbbkkkk....
+...kdbbk........
+...kdbbk........
+..kdbbhbk.......
+.kdbbhhhbk......
+.kdbhhhhhbk.....
+.kdbhhhhhbbk....
+..kdbbhhbbdk....
+...kk.aa.aa.....
+.....a..a.......
+................
+end
+
+sprite fox
+pal k #2a1612
+pal b #e0783a
+pal d #a84a1e
+pal h #f8ecd8
+pal a #2a1612
+pal w #f6f1e0
+pal e #1b1424
+pal l #a84a1e
+................
+.kk..........kk.
+.kdk........kdk.
+.kddk......kddk.
+.kdbbkkkkkkbbdk.
+..kbbbbbbbbbbk..
+..kbwebbbbwebk..
+..kbbbbbbbbbbk..
+..kbhbbbbbbhbk..
+...kbhhhhhhbk...
+...kkbhhaahbkk..
+....kbhhhhbk....
+...kdbbbbbbdk...
+..kdbbhhhhbbdk..
+.kddbbhhhhbbddk.
+..kkkk....kkkk..
+end
+
+sprite otter
+pal k #1e1a24
+pal b #7c6a58
+pal d #54463a
+pal h #d8c8b0
+pal a #1e1a24
+pal w #f6f1e0
+pal e #1b1424
+pal l #54463a
+................
+................
+....kkkkkkkk....
+...kdbbbbbbdk...
+..kdbbbbbbbbdk..
+..kbbwebbwebbk..
+..kbbbbbbbbbbk..
+..kbbhhhhhhbbk..
+..kbhhhaahhhbk..
+...kbhhhhhhbk...
+...kdbbhhbbdk...
+..kdbbhhhhbbdk..
+.kdbbhhhhhhbbdk.
+.kdbbhhhhhhbbdk.
+..kkdbbbbbbdkk..
+....kkk..kkk....
+end
